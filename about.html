@@ -6,99 +6,6 @@
     <title>About Me - Wenjuan LI</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Updated Navigation styles */
-        .navbar {
-            background-color: var(--primary-color);
-            padding: 0.5rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-name {
-            padding: 0.5rem 0;
-        }
-
-        .nav-name a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.8rem;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            transition: color 0.3s ease;
-        }
-
-        .nav-name a:hover {
-            color: var(--secondary-color);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav-links li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-
-        .nav-links li a:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
-        .nav-links li a.active {
-            background-color: var(--secondary-color);
-        }
-
-        /* Responsive navigation */
-        @media (max-width: 768px) {
-            .nav-container {
-                flex-direction: column;
-                padding: 1rem;
-                gap: 1rem;
-            }
-
-            .nav-links {
-                gap: 1rem;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .nav-name {
-                text-align: center;
-            }
-        }
-
-        /* Your existing styles remain the same */
-        .hobby-section {
-            margin: 2rem 0;
-            padding: 2rem;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        /* ... rest of your existing styles ... */
-    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -116,30 +23,27 @@
             </ul>
         </div>
     </nav>
+
     <!-- Main Content -->
     <main>
-        <div class="container">
+        <div class="profile-header">
             <h1>About Me</h1>
-            
+        </div>
+
+        <div class="container">
             <div class="quote">
                 "Beyond research, I believe in maintaining a balanced lifestyle through exercises and outdoor activities."
             </div>
 
             <!-- Hiking Section -->
-            <section class="hobby-section">
-                <h2>Hiking Adventures</h2>
-                <div class="hobby-grid">
-                    <div class="hobby-card">
-                        <div class="hobby-content">
-                            <h3>Trail Exploration</h3>
-                            <p>I enjoy exploring Hong Kong's diverse hiking trails, from the challenging Dragon's Back to the scenic Grass Island. Each hike offers a unique perspective of Hong Kong's natural beauty and helps me maintain work-life balance.</p>
-                        </div>
-                    </div>
-                    <div class="hobby-card">
-                        <div class="photo-gallery">
-                            <img src="assets/images/hiking2.jpg" alt="Mountain View" class="gallery-image">
-                            <img src="assets/images/hiking4.jpg" alt="Summit View" class="gallery-image">
-                        </div>
+            <section class="paper">
+                <h2 class="section-title">Hiking Adventures</h2>
+                <p>I enjoy exploring Hong Kong's diverse hiking trails, from the challenging Dragon's Back to the scenic Grass Island. Each hike offers a unique perspective of Hong Kong's natural beauty and helps me maintain work-life balance.</p>
+                
+                <div class="hobby-card">
+                    <div class="photo-gallery">
+                        <img src="assets/images/hiking2.jpg" alt="Mountain View" class="gallery-image">
+                        <img src="assets/images/hiking4.jpg" alt="Summit View" class="gallery-image">
                     </div>
                 </div>
             </section>
