@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Wenjuan LI - Operations Management Researcher at HKUST">
+    <title>Wenjuan LI - Ph.D. Candidate in Operations Management</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .content-wrapper {
+            display: flex;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .photo-column {
+            flex: 0 0 300px;
+        }
+
+        .text-column {
+            flex: 1;
+        }
+
+        .profile-photo {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .research-interests {
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .research-item {
+            background: #f0f2f5;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            color: #2c3e50;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+
+            .photo-column {
+                text-align: center;
+            }
+
+            .profile-photo {
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-name">
+                <a href="index.html">Wenjuan LI</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="content-wrapper">
+            <!-- Left Column with Photo -->
+            <div class="photo-column">
+                <img src="assets/images/profile-photo.jpg" alt="Wenjuan LI" class="profile-photo">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Email:</strong> wlicw@connect.ust.hk</p>
+                    <p><strong>Office:</strong> LSK Business Building 5067</p>
+                    <p><strong>Institution:</strong> HKUST, Clear Water Bay, Hong Kong</p>
+                </div>
+            </div>
+
+            <!-- Right Column with Text -->
+            <div class="text-column">
+                <!-- Hero Section -->
+                <section class="hero">
+                    <div class="profile-info">
+                        <h1>Wenjuan LI</h1>
+                        <p>Ph.D. Candidate in Operations Management</p>
+                        <p class="institution">Hong Kong University of Science and Technology (HKUST)</p>
+                    </div>
+                </section>
+
+                <!-- Introduction Section -->
+                <section class="introduction">
+                    <div class="paper">
+                        <p>Welcome to my website!</p>
+                        <p>I am a Ph.D. Candidate in Operations Management at the Hong Kong University of Science and Technology (HKUST). I am very fortunate to have Dongwook Shin as my advisor.</p>
+                        
+                        <p>Before my Ph.D. journey, I obtained my master's degree from Johns Hopkins Carey Business School and the bachelor's degree from the University of Science and Technology of China.</p>
+                        
+                        <p>My research interests include revenue management, information sharing, social learning, content management, finance-OM interface, multi-armed Bandit, and dynamic programming.</p>
+
+                        
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
