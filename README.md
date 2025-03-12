@@ -1,2 +1,2 @@
-# wenjuanli.github.io
+# Gwendolyn-Li.github.io
 Wenjuan Li's Personal Website
