@@ -119,3 +119,20 @@ h2.section-title {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+.quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+}
+
+.hiking-section {
+    margin-top: 1.5rem;
+}
+
+.hiking-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
