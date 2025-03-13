@@ -17,4 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
             body.classList.remove('menu-open');
         }
     });
+        document.querySelectorAll('.abstract-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const abstract = toggle.nextElementSibling;
+                const isVisible = abstract.style.display === 'block';
+                abstract.style.display = isVisible ? 'none' : 'block';
+                toggle.textContent = isVisible ? '[Show Abstract]' : '[Hide Abstract]';
+            });
+        });
 });
