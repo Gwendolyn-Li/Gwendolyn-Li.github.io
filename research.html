@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wenjuan LI - Research</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&amp;display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -21,7 +21,7 @@
             <li><a href="cv.html">CV</a></li>
             <li><a href="about.html">ABOUT ME</a></li>
         </ul>
-         <button class="mobile-menu-button" aria-label="Menu">
+         <button class="mobile-menu-button" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
             <span class="hamburger"></span>
         </button>
     </div>
@@ -33,41 +33,79 @@
         </div>
 
         <div class="container">
-            <h2 class="section-title">WORKING PAPERS</h2>
+            <h2 class="section-title">RESEARCH PAPERS</h2>
 
             <div class="paper">
                 <div class="paper-title">Dynamic Persuasion Strategies for Mitigating the Spread of Fake Content</div>
                 <div class="paper-authors">with Dongwook Shin</div>
-                <div class="paper-status">Major Revision at Manufacturing & Service Operations Management</div>
-                <div class="paper-status">Honorable Mention at POMS-HK 2025 Best Student Paper Competition</div>
-                <div class="abstract-toggle">[Show Abstract]</div>
-                <div class="paper-abstract">
-                    This paper examines how digital content platforms can design signaling mechanisms to shape consumers' engagement with potentially fake content. Initially, the platform and consumers face uncertainty about content veracity, but the platform can conduct random inspections to verify it. Based on inspection results, the platform strategically sends signals to consumers. We investigate both public and private signaling policies to maximize revenue. Our findings show that the private policy consistently outperforms the public one; however, neither policy completely mitigates the spread of fake content. Specifically, the optimal public policy fails to signal fake content after a fixed time, whereas the optimal private policy signals fake content only to a subset of consumers. We explore various strategies to reduce the spread of fake content while ensuring profitability. We find that a consumer reporting system boosts the platform's profits but fails to curb the spread of fake content. Alternatively, our analysis suggests that implementing subscriptions and government penalties can effectively reduce fake content while enhancing the platform's revenue.
+                <div class="paper-status">Accepted for publication, <em>Manufacturing &amp; Service Operations Management</em></div>
+                <div class="paper-award">Honorable Mention, POMS-HK 2025 Best Student Paper Competition</div>
+                <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-paper-1">Show abstract</button>
+                <div class="paper-abstract" id="abstract-paper-1" hidden>
+                    <p><strong>Problem definition.</strong> This paper examines how digital content platforms can design signaling mechanisms to shape consumers' engagement with potentially fake content. Initially, the platform and consumers face uncertainty about content veracity, but the platform can conduct random inspections to verify it. Based on inspection results, the platform strategically sends signals to consumers to ultimately maximize revenue.</p>
+                    <p><strong>Methodology/results.</strong> We analyze the structural properties of optimal public and private policies. Our findings show that both policies disclose inspection results with strategic delays, which enhances platform revenue but also increases consumers' exposure to fake content. Furthermore, unlike the optimal public policy, we find that the optimal private policy selectively discloses the inspection results to some consumers; consequently, the optimal private policy generates higher revenue than the optimal public policy but significantly undermines consumer welfare.</p>
+                    <p><strong>Managerial implications.</strong> We explore various strategies to reduce the spread of fake content while ensuring profitability. We find that optimizing the platform's inspection capability boosts the platform's profits but fails to curb the spread of fake content. Alternatively, our analysis suggests that implementing subscriptions and government penalties can effectively reduce fake content while enhancing the platform's revenue.</p>
                 </div>
             </div>
 
             <div class="paper">
-                <div class="paper-title">Producing Content in News Outlets, Fast and Slow</div>
+                <div class="paper-title">Planned Journalism in News Outlets</div>
                 <div class="paper-authors">with Qing Li and Peiwen Yu</div>
-                <div class="paper-status">Work in Progress</div>
-                <div class="abstract-toggle">[Show Abstract]</div>
-                <div class="paper-abstract">
-                    To succeed, news outlets must produce quality content on time. This poses a challenge for two reasons. First, breaking news is unpredictable, and the required journalistic work and associated cost vary from day to day, depending on the news. Second, news content is perishable and it cannot be written in advance. In this study, we investigate two strategies that news outlets use to manage their content production: the planned journalism strategy (creating feature articles held as inventory) and the content syndication strategy (reproducing news articles from external sources through revenue sharing). In this context, we model a news outlet's content production decisions as a dynamic program. We identify structural properties of optimal decisions and explore how the nature of the content relationship (substitutes or complements) influences these decisions. Interestingly, when feature articles and reproduced articles are complements, the adoption of one strategy may either discourage or encourage news outlets from implementing the other.
+                <div class="paper-status">Revise and resubmit, <em>Manufacturing &amp; Service Operations Management</em></div>
+                <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-paper-2">Show abstract</button>
+                <div class="paper-abstract" id="abstract-paper-2" hidden>
+                    <p><strong>Problem definition.</strong> News outlets choose content under uncertain news costs and publication limits. News is perishable, whereas evergreen content can be written in advance and stored. We study how the content relationship and operational bottlenecks transmit a news-cost shock to current publication and planned evergreen writing.</p>
+                    <p><strong>Methodology/results.</strong> We formulate a stochastic dynamic program that coordinates publication, writing, and carryover inventory. Under the i.i.d. baseline, a higher news cost reduces news publication. With substitute content, it increases evergreen publication and writing; with complementary content, the directions depend on whether the publication cap binds. Planned writing can nevertheless fall because more writing is used immediately. Numerically, the value from jointly adjusting publication and writing is larger than the value from rescheduling a fixed publication workload under substitution. Content syndication generally replaces planning value, but it can reinforce planning when complementary content can be published together under a sufficiently wide cap. When news and evergreen writing share editor hours, evergreen inventory can initially increase news production by releasing scarce production capacity, making news single-peaked in inventory.</p>
+                    <p><strong>Managerial implications.</strong> Editors should evaluate news and evergreen content jointly. Evergreen inventory is valuable not only because it smooths writing, but also because it changes the content mix and can release scarce editorial capacity.</p>
+                </div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title">Generative AI, Content Licensing, and Publisher Quality</div>
+                <div class="paper-authors">with Peiwen Yu</div>
+                <div class="paper-status">Under review, <em>Information Systems Research</em></div>
+                <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-paper-3">Show abstract</button>
+                <div class="paper-abstract" id="abstract-paper-3" hidden>
+                    <p>Generative AI is increasingly a first stop for information seeking. Acting as an answer engine, it provides synthesized responses that may incorporate licensed publisher content. Such licensing is often viewed as win-win because AI platforms gain high-quality inputs and publishers receive compensation. However, this view overlooks a key structural feature: licensing makes AI answers derivative of publisher content within a sequential search process. As publisher quality improves, AI answers become more effective at satisfying consumers early, which displaces publisher traffic and may shrink the value created by licensing. As a result, licensing can raise publisher profits while weakening quality incentives. Consumer welfare can also decline, even though AI offers an additional information source. We show that these distortions can be alleviated through content-use terms that let publishers control how effectively their content improves AI answers or how much of it is made available. Licensing agreements should therefore govern not only compensation but also how publisher content may be used.</p>
+                </div>
+            </div>
+
+            <h2 class="section-title">WORK IN PROGRESS</h2>
+
+            <div class="paper">
+                <div class="paper-title">Misspecified Learning with Online Reviews</div>
+                <div class="paper-authors">with Dongwook Shin and Marco Scarsini</div>
+                <div class="paper-status">Work in progress · Draft available upon request</div>
+                <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-paper-4">Show abstract</button>
+                <div class="paper-abstract" id="abstract-paper-4" hidden>
+                    <p><strong>Problem definition.</strong> Online retailers use recommendation and advertising algorithms to expose new products to likely buyers. When later demand relies on reviews, targeting also selects who produces quality information. We study a platform choosing price and targeting for a product of unknown experience quality. Consumers account for purchaser self-selection but do not observe the upstream exposure shift.</p>
+                    <p><strong>Methodology/results.</strong> We develop an analytical model of sequential review-based learning and long-run price-targeting choice. Targeting changes the review-generating population while consumers evaluate reviews under untargeted likelihoods. When the two learning boundaries are ordered, weak targeting preserves correct learning, strong targeting produces false-high learning for a low-quality product, and intermediate targeting makes the long-run belief history dependent. Stronger targeting can accelerate both correct learning and false confidence. The limiting belief determines demand: false-high learning applies the high-quality purchase cutoff to a low-quality product. Price moves the learning boundaries and reinforces the platform's targeting incentive. Within the incorrect-learning region, raising price and targeting together preserves purchase, kept-sale, and return probabilities while increasing revenue. If targeting capacity can be reached before the price cap binds, maximum targeting dominates every lower-targeting policy in that region for every return cost. A global numerical comparison that includes intermediate policies and no selling finds the maximum-targeting incorrect-learning policy preferred across the evaluated return costs, with price reducing returns while targeting remains at capacity.</p>
+                    <p><strong>Managerial implications.</strong> Algorithmic targeting jointly allocates demand and shapes review information. Faster belief convergence can mean faster error. Fewer returns can reflect price accommodation while the targeting-induced information distortion remains unchanged.</p>
+                </div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title">Endogenous Polarization with Biased Consumers</div>
+                <div class="paper-authors">with Wentao Lu</div>
+                <div class="paper-status">Work in progress · Draft available upon request</div>
+                <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-paper-5">Show abstract</button>
+                <div class="paper-abstract" id="abstract-paper-5" hidden>
+                    <p><strong>Problem definition.</strong> Independent influencers may evaluate the same quality signal but attract consumers who begin with different views of product quality. A seller chooses one price before their product reviews are published. We study when competition between influencers benefits the seller and whether it also benefits consumers.</p>
+                    <p><strong>Methodology/results.</strong> We develop an analytical model in which consumers select influencers according to their initial views, while influencers choose evaluation standards to maximize aggregate expected satisfaction among the consumers who consult them. A single influencer centers its product review on the market's average initial view. Two competing influencers differentiate, so skeptical and optimistic consumers receive different reviews of the same signal. Competition leaves average perceived quality unchanged but increases the differences across consumers. It supports a higher price when the seller serves only consumers with favorable posterior beliefs, while making it harder to reach a broad market at that price. Competition therefore raises the seller's maximum profit at lower quality levels but lowers it at higher quality levels, when selling to more consumers becomes more valuable. Relative to having no influencer, a single influencer produces a similar profit reversal when product reviews leave consumers' posterior beliefs sufficiently dispersed around their average. The effect of competition weakens as consumers account more fully for how influencers translate the quality signal into product reviews and disappears with full adjustment. The influencer structure that yields more seller profit also need not produce greater consumer surplus from purchases.</p>
+                    <p><strong>Managerial implications.</strong> Sellers should consider not only influencer reach and average quality perceptions, but also how differently consumer groups assess the product and whether one price can profitably serve them.</p>
                 </div>
             </div>
 
             <h2 class="section-title">PRESENTATIONS</h2>
             <div class="paper">
                 <ul class="presentation-list">
-                    <li>INFORMS Annual Meeting, Atlanta (2025)</li>
-                    <li>INFORMS International Meeting, Singapore (2025)</li>
-                    <li>POMS International Conference in China, Hainan (2025)</li>
-                    <li>INFORMS MSOM Main Conference, London (2025)</li>
-                    <li>POMS-HK International Conference, Hong Kong (2025)</li>
-                    <li>INFORMS Annual Meeting, Seattle (2024)</li>
-                    <li>HKUST ISOM Department Seminar，Hong Kong(2024)</li>
-                    <li>POMS International Conference in China, Anhui (2024)</li>
-                    <li>POMS-HK International Conference, Hong Kong (2024)</li>
+                    <li>POMS International Conference in China — Shanxi (2026), Hainan (2025), Anhui (2024)</li>
+                    <li>POMS-HK International Conference — 2026, 2025, 2024</li>
+                    <li>HKUST Business School PhD Conference — 2026</li>
+                    <li>INFORMS Annual Meeting — Atlanta (2025), Seattle (2024)</li>
+                    <li>MSOM Conference — London (2025)</li>
+                    <li>INFORMS International Meeting — Singapore (2025)</li>
+                    <li>HKUST ISOM Department Seminar — 2024</li>
                 </ul>
             </div>
         </div>
