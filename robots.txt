@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gwendolyn-li.github.io/sitemap.xml
